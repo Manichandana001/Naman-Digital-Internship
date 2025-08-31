@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Chat App</h1>
+        <p>End-to-end encrypted messaging demo between User A and User B.</p>
+        <div class="chat-container">
+            <div id="chatMessages" class="chat-messages"></div>
+            <div class="input-container">
+                <select id="userSelect">
+                    <option value="A">User A</option>
+                    <option value="B">User B</option>
+                </select>
+                <input type="text" id="messageInput" placeholder="Type your message..." />
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+        <div class="status">
+            <p id="statusText">Initializing encryption...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
